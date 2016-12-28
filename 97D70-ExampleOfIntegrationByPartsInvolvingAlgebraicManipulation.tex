@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExampleOfIntegrationByPartsInvolvingAlgebraicManipulation}
+\pmcreated{2013-03-22 17:39:52}
+\pmmodified{2013-03-22 17:39:52}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{example of integration by parts involving algebraic manipulation}
+\pmrecord{10}{40100}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97D70}
+\pmclassification{msc}{26A36}
+\pmrelated{ALectureOnIntegrationByParts}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pstricks}
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\begin{document}
+\PMlinkescapeword{right}
+\PMlinkescapeword{side}
+\PMlinkescapeword{sides}
+
+For some integrals which require integration by parts, it may be \PMlinkescapetext{necessary} to treat the integral like a variable and solve for it.  For example, consider the integral
+\[
+\int e^x\cos x\, dx.
+\]
+Using integration by parts with the substitutions
+\begin{center}
+$\begin{array}{rlcrl}
+ u & = \cos x      & \quad & dv & =e^x\, dx \\
+du & =-\sin x\, dx &       &  v & =e^x,
+\end{array}$
+\end{center}
+we obtain
+\[
+\int e^x\cos x\, dx=e^x\cos x+\int e^x\sin x\, dx.
+\]
+Using integration by parts on the integral on the right hand side with the substitutions
+\begin{center}
+$\begin{array}{rlcrl}
+ u & =\sin x      & \quad & dv & =e^x\, dx \\
+du & =\cos x\, dx &       &  v & =e^x,
+\end{array}$
+\end{center}
+we obtain
+\[
+\int e^x\cos x\, dx=e^x\cos x+e^x\sin x-\int e^x\cos x\, dx.
+\]
+
+The ``trick'' is to add $\int e^x\cos x\, dx$ to both sides of the equation.  Some people find this concept surprising at first sight, especially since most people who are taking calculus for the first time do not use equations when showing their work for integration.  For integrals such as $\int e^x\cos x\, dx$, writing out an equation is essential.
+
+After adding $\int e^x\cos x\, dx$ to both sides of the above equation, we will need a $+C$ on the right hand side.  Thus, we obtain
+\[
+2\int e^x\cos x\, dx=e^x\cos x+e^x\sin x+C.
+\]
+Therefore, we can figure out what $\int e^x\cos x\, dx$ is by dividing both sides by $2$, which yields
+\[
+\int e^x\cos x\, dx=\frac{1}{2}\left( e^x\cos x+e^x\sin x+C \right).
+\]
+On the other hand, since $C$ is an arbitrary constant, we generally write
+\[
+\int e^x\cos x\, dx=\frac{1}{2}\left( e^x\cos x+e^x\sin x \right)+C
+\]
+with the understanding that the constant $C$ in the final equation may not have the same value as $C$ appearing in equations in previous steps.
+%%%%%
+%%%%%
+\end{document}

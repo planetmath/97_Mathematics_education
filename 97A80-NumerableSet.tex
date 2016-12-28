@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NumerableSet}
+\pmcreated{2013-03-22 16:01:32}
+\pmmodified{2013-03-22 16:01:32}
+\pmowner{juanman}{12619}
+\pmmodifier{juanman}{12619}
+\pmtitle{numerable set}
+\pmrecord{11}{38066}
+\pmprivacy{1}
+\pmauthor{juanman}{12619}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97A80}
+%\pmkeywords{Analysis}
+\pmrelated{Calculus}
+\pmrelated{TopicsOnCalculus}
+\pmrelated{Denumerable}
+\pmrelated{Countable}
+\pmdefines{enumeration}
+\pmdefines{enumerable}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $X$ be a set.  An \emph{enumeration} on $X$ is a surjection from the set of natural numbers $\mathbb{N}$ to $X$.
+
+A set $X$ is called \emph{numerable} if there is a bijective enumeration on $X$.
+
+It is easy to show that $\mathbb{Z}$ and $\mathbb{Q}$ are numerable.
+
+It is a standard fact that $\mathbb{R}$ is not numerable. For, if we suppose that the numbers [0,1] were countable, we can arrange them in a list (given by the supposed bijection).
+
+Representing them in a binary form, it is not hard to construct an element in [0,1], which is not in the list.
+
+This contradiction implies that [0,1]$\subset\mathbb{R}$ is not numerable. 
+
+\textbf{Remark}.  If the enumeration $\mathbb{N}\to X$ is furthermore a computable function, then we say that $X$ is \emph{enumerable}.  There exists numerable sets that are not enumerable.
+%%%%%
+%%%%%
+\end{document}

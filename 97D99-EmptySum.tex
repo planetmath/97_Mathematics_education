@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EmptySum}
+\pmcreated{2013-03-22 18:40:57}
+\pmmodified{2013-03-22 18:40:57}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{empty sum}
+\pmrecord{5}{41433}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97D99}
+\pmclassification{msc}{05A19}
+\pmclassification{msc}{00A05}
+\pmrelated{EmptyProduct}
+\pmrelated{EmptySet}
+\pmrelated{AddingAndRemovingParenthesesInSeries}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+The {\em empty sum} is such a borderline case of sum where the number of the addends is zero, i.e. the set of the addends is an empty set.
+
+\begin{itemize}
+
+\item One may think that the zeroth multiple $0a$ of a ring element $a$ is the empty sum; it can spring up by adding in the ring two multiples whose integer coefficients are opposite numbers:
+$$(-n)a\!+\!na \,=\, (-n\!+\!n)a = 0a$$
+This empty sum equals the additive identity 0 of the ring, since the multiple $(-n)a$ is defined to be
+$$\underbrace{(-a)\!+\!(-a)\!+\ldots+\!(-a)}_{n\; \mathrm{copies}}$$
+
+\item In using the \PMlinkname{sigma notation}{Summing} 
+\begin{align}
+\sum_{i=m}^nf(i)
+\end{align}
+one sometimes sees a case 
+\begin{align}
+\sum_{i=m}^{m-1}f(i).
+\end{align}
+It must be an empty sum, because in
+\begin{align}
+\sum_{i=m}^mf(i)
+\end{align}
+the number of addends is clearly one and therefore in (2) the number is zero.\, Thus the value of (2) may be defined to be 0.
+\end{itemize}
+
+
+
+\textbf{Note.}\, The sum (1) is not defined when $n$ is less than $m\!-\!1$, but if one would want that the usual rule
+\begin{align}
+\sum_{i=m}^nf(i)+\sum_{i=n+1}^kf(i) \;=\; \sum_{i=m}^kf(i)
+\end{align}
+would be true also in such a cases, then one has to define
+$$\sum_{i=m}^nf(i) \;=\; -\sum_{i=n+1}^{m-1}f(i) \qquad\qquad(n < m\!-\!1),$$
+because by (4) one could calculate
+$$0 \,=\, -\sum_{i=n+1}^{m-1}f(i)+\sum_{i=n+1}^{m-1}f(i) \,=\,\sum_{i=m}^nf(i)+\sum_{i=n+1}^{m-1}f(i) 
+\,=\, \sum_{i=m}^{m-1}f(i).$$
+
+
+%%%%%
+%%%%%
+\end{document}

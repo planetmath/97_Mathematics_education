@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AlternativeDefinitionOfTheNaturalLogarithm}
+\pmcreated{2013-03-22 16:11:10}
+\pmmodified{2013-03-22 16:11:10}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{alternative definition of the natural logarithm}
+\pmrecord{17}{38273}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97D40}
+\pmrelated{DerivativeOfExponentialFunction}
+\pmrelated{DerivativeOfInverseFunction}
+\pmrelated{Logarithm}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\PMlinkescapeword{function}
+\PMlinkescapeword{imply}
+\PMlinkescapeword{satisfies}
+\PMlinkescapeword{logarithm}
+\PMlinkescapeword{implies}
+\PMlinkescapeword{equation}
+\PMlinkescapeword{point}
+\PMlinkescapeword{argument}
+\PMlinkescapeword{similar}
+\PMlinkescapeword{identity}
+\PMlinkescapeword{properties}
+
+The \PMlinkname{natural logarithm function}{NaturalLogarithm2} $\log x$ can be defined by an integral, as shown in the entry to which this entry is attached.  However, it can also be defined as the inverse function of the exponential function $\exp x =e^x$.  
+
+In this entry, we show that this definition of $\log x$ yields a function that satisfies the logarithm laws $\log xy =\log x +\log y$ and $\log x^r =r\log x$ hold for any positive real numbers $x$ and $y$ and any real number $r$.  We also show that $\log x$ is differentiable with respect to $x$ on the interval $(1,\infty)$ with derivative $\frac{1}{x}$.  Note that the logarithm laws imply that $\log 1 =0$.  The mean-value theorem implies that these properties characterize the logarithm function.
+
+The proof of the first logarithm law is straightforward.  Let $x$ and $y$ be positive real numbers.  Then using the fact that $e^x$ and $\log x$ are inverse functions, we find that
+\[
+e^{\log xy}=xy=e^{\log x}\cdot e^{\log y}=e^{\log x +\log y}.
+\]
+Since $e^x$ is an injective function, the equation $e^{\log xy}=e^{\log x +\log y}$ implies the first logarithm law.
+
+For the second logarithm law, observe that
+\[
+e^{\log x^r}=x^r=(e^{\log x})^r=e^{r\log x}.
+\]
+
+Since $e^x$ and $\log x$ are inverse functions and $e^x$ is differentiable, so is $\log x$.  We can use the chain rule to find a formula for the derivative:
+
+\[
+1=\frac{dx}{dx}=\frac{d}{dx}[e^{\log x}]=e^{\log x}\frac{d}{dx}[\log x]=x\frac{d}{dx}[\log x].
+\]
+
+Hence, $\displaystyle \frac{d}{dx}[\log x]=\frac{1}{x}$.
+
+%At this point we could use the chain rule and the fact that $e^x$ and $\log x$ %are inverse functions to find the derivative of $\log x$.  Instead we will work %directly with the definition of derivative, using an argument similar to the %one used to prove the identity
+%\[
+%\lim_{n\to\infty}(1+\frac{1}{n})^n=e.
+%\]
+%
+%Applying the logarithm laws to the definition of the derivative, we have
+%\begin{align*}
+%\frac{d}{dx} [\log x]
+%&= \lim_{h\to 0}\frac{\log(x+h)-\log(x)}{h} \\
+%&= \lim_{h\to 0}\frac{1}{h}\log\left(\frac{x+h}{x}\right) \\
+%&= \lim_{h\to 0}\frac{1}{h}\log\left(1+\frac{h}{x}\right).
+%\end{align*}
+
+%%%%%
+%%%%%
+\end{document}

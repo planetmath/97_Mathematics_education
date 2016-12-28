@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{QuadraticInequality}
+\pmcreated{2013-03-22 15:23:48}
+\pmmodified{2013-03-22 15:23:48}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{quadratic inequality}
+\pmrecord{12}{37233}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97D40}
+\pmclassification{msc}{26-00}
+\pmclassification{msc}{12D99}
+\pmrelated{QuadraticFormula}
+\pmrelated{SolvingCertainPolynomialInequalities}
+\pmrelated{TangentOfConicSection}
+\pmrelated{IndexOfInequalities}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+The \PMlinkescapetext{{\em normal form}} of a {\em quadratic inequality} is
+\begin{align}
+   ax^2\!+\!bx\!+\!c \;<\; 0
+\end{align}
+or 
+\begin{align}
+   ax^2\!+\!bx\!+\!c \;>\; 0
+\end{align}
+where $a$, $b$ and $c$ are known real numbers and\, $a \neq 0$.
+
+Solving such an inequality, i.e. determining all real values of $x$ which satisfy it, is based on the fact that the graph of the quadratic polynomial function\, $x\mapsto ax^2\!+\!bx\!+\!c$\, is the parabola
+    $$y \;=\; ax^2\!+\!bx\!+\!c,$$
+opening upwards if\, $a > 0$\, and downwards if\, $a < 0$.
+
+For obtaining the solution we first have to determine the real zeroes of the polynomial $ax^2\!+\!bx\!+\!c$, i.e. solve the \PMlinkname{quadratic equation}{QuadraticFormula}\, 
+$ax^2\!+\!bx\!+\!c = 0$.
+\begin{itemize}
+ \item If there is two distinct real zeroes $x_1$ and $x_2$ (say\, $x_1 < x_2$),\, then the parabola intersects the $x$-axis in these points.\, In the case\, $a > 0$\, the parabola opens upwards and thus\, $y < 0$\, in the interval\, $(x_1,\,x_2)$, but\, $y > 0$\, outside this interval.\, I.e., for positive $a$,  the solution of (1) is
+      $$x_1 \;<\; x \;<\; x_2$$
+and the solution of (2) is
+      $$x \;<\; x_1\,\,\,\mbox{ or }\,\,\,x \;>\; x_2$$ 
+(note that the latter solution-domain consists of two distinct portions of the $x$-axis and therefore must be expressed with two separate inequalities, not with a double inequality as the former).\, For negative $a$ we must swap those solutions for (1) and (2).
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics{parabola.1.eps}
+\end{center}
+\caption{Solving for $ax^2\!+\!bx\!+\!c < 0$ when $a > 0$ and the quadratic has two distinct roots}
+\end{figure}
+
+ \item If there is only one real zero of the polynomial (we may say that\, $x_2 = x_1$), the parabola has $x$-axis as the \PMlinkname{tangent}{TangentLine} in its apex.\, For positive $a$ the other points of parabola are above the $x$-axis, i.e. they have\, $y > 0$\, always\, but\, $y < 0$\, never.\, So, (1) has no solutions, but (2) is true for all\, $x \neq x_1$ (i.e.\, $x < x_1$\, or\, $x > x_1$).\, For the case of negative $a$ we again must change those solutions for (1) and (2).
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics{parabola.2.eps}
+\end{center}
+\caption{Solving for $ax^2\!+\!bx\!+\!c > 0$ when $a > 0$ and the quadratic has only one root}
+\end{figure}
+
+ \item There can still appear the possibility that the polynomial has no real zeroes (the roots of the equation are imaginary).\, Now the parabola does not intersect or touch the $x$-axis, but is totally above the axis when $a$ is positive ($y > 0$\, always) and totally below the axis when $a$ is negative 
+($y < 0$\, always).\, Thus we get no solutions at all (the inequality is impossible) or all real numbers $x$ as solutions, according to what the inequality (1) or (2) demands.
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics{parabola.3.eps}
+\end{center}
+\caption{$ax^2\!+\!bx\!+\!c > 0$ for all $x$ when $a > 0$ and the quadratic has no roots}
+\end{figure}
+
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

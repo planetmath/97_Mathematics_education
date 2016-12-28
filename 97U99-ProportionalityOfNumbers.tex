@@ -1,0 +1,102 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProportionalityOfNumbers}
+\pmcreated{2014-02-23 21:26:01}
+\pmmodified{2014-02-23 21:26:01}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{proportionality of numbers}
+\pmrecord{11}{42093}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97U99}
+\pmclassification{msc}{12D99}
+\pmsynonym{proportionality}{ProportionalityOfNumbers}
+\pmrelated{Variation}
+\pmrelated{KalleVaisala}
+\pmdefines{proportional}
+\pmdefines{directly proportional}
+\pmdefines{inversely proportional}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{members}
+
+The nonzero numbers $a_1,\,a_2,\,\ldots,\,a_n$ are (\emph{directly}) \emph{proportional} to the nonzero numbers 
+$b_1,\,b_2,\,\ldots,\,b_n$ if
+\begin{align}
+a_1\!:\!a_2\!:\ldots:\!a_n \;=\; b_1\!:\!b_2\!:\ldots:\!b_n,
+\end{align}
+which special notation means the simultaneous validity of the proportion equations
+\begin{align}
+a_1\!:\!a_2 \;=\; b_1\!:\!b_2, 
+\;\quad a_2\!:\!a_3 \;=\; b_2\!:\!b_3,\;\quad \ldots, \;\quad 
+a_{n-1}\!:\!a_n \;=\; b_{n-1}\!:\!b_n.
+\end{align}
+
+It follows however that 
+\begin{align}
+a_i\!:\!a_j \;=\; b_i\!:\!b_j \quad \mbox{for all}\;\; i,\,j.
+\end{align}
+In fact, if one multiplies the left hand sides of e.g. two first equations (2) and similarly their right hand sides, then one obtains\, $a_1\!:\!a_3 \;=\; b_1\!:\!b_3$.
+
+Swapping the middle members of the proportions (2), which by the \PMlinkname{parent entry}{ProportionEquation} is allowable, one gets the system of equations 
+\begin{align}
+\frac{a_1}{b_1} \;=\; \frac{a_2}{b_2} \;=\; \ldots \;=\; \frac{a_n}{b_n}
+\end{align}
+which is \PMlinkname{equivalent}{Equivalent3} with (1) and (2).\\
+
+The numbers $a_1,\,a_2,\,\ldots,\,a_n$ are \emph{inversely proportional} to the numbers $b_1,\,b_2,\,\ldots,\,b_n$ if
+$$a_1\!:\!a_2\!:\ldots:\!a_n \;=\; \frac{1}{b_1}\!:\!\frac{1}{b_2}\!:\ldots:\!\frac{1}{b_n}.$$
+Then we have
+$$a_i\!:\!a_j \;=\; b_j\!:\!b_i \quad \mbox{for all}\;\; i,\,j.$$\\
+
+
+\textbf{Note.}\, The notation \,$a_1\!:\!a_2\!:\ldots:\!a_n$\, expressing the ``ratio of several numbers'' is, of course, \PMlinkescapetext{not a number}, but it behaves as the ratio (= the quotient) of two numbers in the sense that all of its members $a_i$ may be multiplied by a nonzero number without injuring the validity of (1).\\
+
+\textbf{Example.}\, Let\, $a\!:\!b = 2\!:\!3$\, and\, $b\!:\!c = 4\!:\!5$.\, Determine the least positive integers to which the numbers $a,\,b,\,c$ are\, a) directly,\, b) inversely proportional.\\
+a) The least common multiple of 3 and 4, the members corresponding the members $b$ in the given proportions, is 12.\, Thus we must multiply the right hand sides of these proportions respectively by\, $\frac{12}{3} = 4$\, and\, $\frac{12}{4} = 3$:
+$$a\!:\!b \;=\; 2\!:\!3 \;=\; 8\!:\!12, \quad b\!:\!c \;=\; 4\!:\!5 \;=\; 12\!:\!15.$$
+Accordingly,
+$$a\!:\!b\!:\!c \;=\; 8\!:\!12\!:\!15.$$
+b) We may write
+$$a\!:\!b \;=\; \frac{1}{3}\!:\!\frac{1}{2} \;=\; \frac{1}{15}\!:\!\frac{1}{10}, \quad 
+  b\!:\!c \;=\; \frac{1}{5}\!:\!\frac{1}{4} \;=\; \frac{1}{10}\!:\!\frac{1}{8},$$
+where the denominators of the right hand sides have been multiplied by 5 and 2, respectively.\, Consequently,
+$$a\!:\!b\!:\!c \;=\; \frac{1}{15}\!:\!\frac{1}{10}\!:\!\frac{1}{8},$$
+i.e. the required integers are 15, 10, 8.
+
+
+\begin{thebibliography}{8}
+\bibitem{VG}{\sc K. V\"ais\"al\"a}: {\em Geometria}.\, Reprint of the tenth edition.\, Werner S\"oderstr\"om Osakeyhti\"o, Porvoo \& Helsinki (1971).
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

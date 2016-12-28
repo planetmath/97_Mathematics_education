@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{StrangeRoot}
+\pmcreated{2013-03-22 17:55:53}
+\pmmodified{2013-03-22 17:55:53}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{strange root}
+\pmrecord{8}{40426}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97D99}
+\pmclassification{msc}{26A09}
+\pmsynonym{wrong root}{StrangeRoot}
+\pmsynonym{extraneous root}{StrangeRoot}
+\pmrelated{QuadraticFormula}
+\pmrelated{LogicalOr}
+\pmrelated{SquaringConditionForSquareRootInequality}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{root} \PMlinkescapeword{roots}
+
+In solving certain \PMlinkescapetext{types} of equations, one may obtain besides the proper (\PMlinkescapetext{right}) \PMlinkname{roots}{Equation} also some {\em strange roots} which do not satisfy the original equation.  Such a thing can happen especially when one has in some stage squared both sides of the treated equation; in this situation one must check all ``roots'' by substituting them to the original equation.\\
+
+\textbf{Example.}\, $$x-\sqrt{x} = 12$$
+$$x-12 = \sqrt{x}$$
+$$(x-12)^2 = (\sqrt{x})^2$$
+$$x^2-24x+144 = x$$
+$$x^2-25x+144 = 0$$
+$$x = \frac{25\pm\sqrt{25^2-4\cdot144}}{2} = \frac{25\pm7}{2}$$
+$$x = 16 \quad \lor \quad x = 9$$
+Substituting these values of $x$ into the left side of the original equation yields
+$$16-4 = 12, \quad 9-3 = 6.$$
+Thus, only\, $x = 16$\, is valid,\, $x = 9$\, is a strange root.  (How\, $x = 9$\, is related to the solved equation, is explained by that it may be written\, $(\sqrt{x})^2-\sqrt{x}-12 = 0$, from which one would obtain via the quadratic formula that\, $\sqrt{x} = \frac{1\pm7}{2}$,\, i.e.\, $\sqrt{x} = 4$\, or\, $\sqrt{x} = -3$.\, The latter corresponds the value\, $x = 9$,\, but it were relevant to the original equation only if we would allow negative values for square roots of positive numbers; the \PMlinkescapetext{current} practice excludes them.)\\
+
+
+The general explanation of strange roots when squaring an equation is, that the two equations
+$$a = b,$$
+$$a^2 = b^2$$
+are not \PMlinkname{equivalent}{Equivalent3} (but the equations\, $a = \pm b$\, and\, $a^2 = b^2$\, would be such ones).
+
+
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProductOfNegativeNumbers}
+\pmcreated{2013-03-22 17:35:41}
+\pmmodified{2013-03-22 17:35:41}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{product of negative numbers}
+\pmrecord{13}{40008}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Derivation}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97D40}
+\pmclassification{msc}{13A99}
+\pmsynonym{product of two negative numbers}{ProductOfNegativeNumbers}
+\pmrelated{OppositeNumber}
+\pmrelated{PlusSign}
+\pmrelated{Multiplication}
+\pmrelated{KalleVaisala}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{factor} \PMlinkescapeword{factors} \PMlinkescapeword{order} \PMlinkescapeword{mean}
+
+\textbf{\PMlinkescapetext{Why is the product of two negative numbers positive?}}
+$$\mbox{Why is}\;\; (-a)(-b) = ab?$$
+
+Negative numbers are less than zero, positive ones are more than zero.  One can study the former, concrete question in fact from a more general \PMlinkescapetext{point} of view, where the used letter variables in the latter question may be thought equally well positive as negative (but it may be simpler and better to think that $a$ and $b$ there mean positive numbers).  We use the notation convention, usual in mathematics, that $+a$ and $+b$ mean the same as $a$ and $b$ (see plus sign), when it is easy to speak of changing the sign.\\
+
+The following three properties of multiplication are well known:
+\begin{itemize}
+\item The product of two numbers equals to zero always when one of the numbers equals to zero.
+\item Commutative law:\, $ab = ba$
+\item Distributive law:\, $a(b\!+\!c) = ab\!+\!ac$
+\end{itemize}
+
+It is natural to require these properties regardless of whether the numbers are positive or negative.
+
+We need in the following calculation only the first and the last property:
+$$0 = (+a)\!\cdot\!0\, = \,(+a)[(+b)\!+\!(-b)]\, = \,(+a)(+b)\!+\!(+a)(-b)\, = \,ab\!+\!(+a)(-b)$$
+Because the value of the sum in the end is zero, the latter summand $(+a)(-b)$ must be the opposite number of the former addend $ab$.  Accordingly we may write:
+\begin{align}
+(+a)(-b) = -(ab)
+\end{align}
+This result means that as the sign of the second \PMlinkname{factor}{Product} of the product $(+a)(+b)$ is changed, the sign of the whole product changes.  The same concerns of course also the first factor of the product, since by the commutative law, the order of the factors can be changed.
+
+But if one changes in the product $(+a)(+b)$ the signs of both factors, first one and then the other, the sign of the product changes twice, i.e. it remains unchanged.  Thus we obtain the final result
+\begin{align}
+(-a)(-b) = ab.
+\end{align}
+If we think that $a$ and $b$ are positive numbers, the result (2) must be understood that {\em the product of two negative numbers is necessarily positive}, in order to keep the three properties of multiplication in \PMlinkescapetext{force} for all numbers.\\
+
+\textbf{Remark.}  The justification of (1) and (2) makes apparent, that these formulae are in \PMlinkescapetext{force} in every ring (cf. the \PMlinkname{parent entry}{XcdotYXcdotY2} where one assumes the ring unity).
+
+\begin{thebibliography}{9}
+\bibitem{VA}{\sc K. V\"ais\"al\"a:}  {\em Algebran oppi- ja esimerkkikirja I}.  Fifth edition.  Werner S\"oderstr\"om osakeyhti\"o, Porvoo \& Helsinki (1952).
+\end{thebibliography}
+
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FactorsWithMinusSign}
+\pmcreated{2015-02-04 12:30:11}
+\pmmodified{2015-02-04 12:30:11}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{factors with minus sign}
+\pmrecord{7}{40028}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97D40}
+\pmclassification{msc}{13A99}
+\pmsynonym{sign rules for products}{FactorsWithMinusSign}
+%\pmkeywords{product}
+%\pmkeywords{power}
+\pmrelated{GeneralAssociativity}
+\pmrelated{Multiplication}
+\pmrelated{DoublyEvenNumber}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{factor} \PMlinkescapeword{factors} \PMlinkescapeword{base} 
+\PMlinkescapeword{power} \PMlinkescapeword{powers}
+
+The sign (cf. plus sign, opposite number) rule
+\begin{align}
+(+a)(-b) = -(ab),
+\end{align}
+derived in the 
+\PMlinkname{parent entry}{productofnegativenumbers} 
+and concerning numbers and elements $a$, $b$ of an arbitrary 
+ring, may be generalised to the following
+
+\textbf{Theorem.}\, If the sign of one \PMlinkname{factor}{Product} in a ring product is changed, the sign of the product changes.
+
+\textbf{Corollary 1.}\, The product of real numbers is equal to the product of their absolute values equipped with the ``$-$'' sign if the number of negative factors is odd and with ``$+$'' sign if it is even.  Especially, any odd power of a negative real number is negative and any even power of it is positive.
+
+\textbf{Corollary 2.}\, Let us consider natural powers of a ring element.  If one changes the sign of the base, then an odd power changes its sign but an even power remains unchanged:
+$$(-a)^{2n+1} = -a^{2n+1}, \quad (-a)^{2n} = a^{2n} \qquad (n \in \mathbb{N})$$
+
+%%%%%
+%%%%%
+\end{document}

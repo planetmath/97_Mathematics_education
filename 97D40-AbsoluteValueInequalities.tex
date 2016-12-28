@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AbsoluteValueInequalities}
+\pmcreated{2013-03-22 15:59:20}
+\pmmodified{2013-03-22 15:59:20}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{absolute value inequalities}
+\pmrecord{7}{38009}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97D40}
+\pmrelated{InequalityWithAbsoluteValues}
+\pmdefines{greator less thand}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $a,b,c \in \mathbb{R}$ and $f(x) \in \mathbb{R}[x]$.  There is a mnemonic device that is useful for solving inequalities of the following forms:
+
+\begin{center}
+$\begin{array}{ccc}
+a|f(x)|+b \le c & \,\, & c \ge a|f(x)|+b \\
+a|f(x)|+b < c & \,\, & c > a|f(x)|+b \\
+a|f(x)|+b \ge c & \,\, & c \le a|f(x)|+b \\
+a|f(x)|+b > c & \,\, & c < a|f(x)|+b \end{array}$
+\end{center}
+
+Before using the mnemonic device, the expression $|f(x)|$ should be \PMlinkescapetext{isolated} and on the left hand \PMlinkescapetext{side} of the inequality.  Once this is accomplished, the absolute value must be dealt with:  One statement should look \PMlinkescapetext{similar} to the previous one, the only \PMlinkescapetext{difference} being that the absolute value \PMlinkescapetext{signs} are dropped.  The other statement should also have the absolute value \PMlinkescapetext{signs} dropped, but the inequality needs reversed and the number (on the \PMlinkescapetext{right}) needs to be negated.
+
+The two statements as described above should be \PMlinkescapetext{connected} using either $\operatorname{or}$ or $\operatorname{and}$.  The mnemonic that aids in remembering which one to use is {\sl greator less thand\/}.  That is, when the inequality before splitting up has $>$ or $\ge$, the connector $\operatorname{or}$ should be used; when the inequality before splitting up has $<$ or $\le$, the connector $\operatorname{and}$ should be used.
+
+Here is an example:
+
+\begin{center}
+$\begin{array}{rl}
+8 & > 3+|2x-7| \\
+5 & > |2x-7| \\
+|2x-7| & < 5 \end{array}$
+\end{center}
+
+Since the inequality is $<$, $\operatorname{and}$ should be used.
+
+\begin{center}
+$\begin{array}{rlcrl}
+2x-7 & < 5 & \, \operatorname{and} \, & 2x-7 & > -5 \\
+2x & < 12 & \, \operatorname{and} \, & 2x & > 2 \\
+x & < 6 & \, \operatorname{and} \, & x & > 1 \end{array}$
+\end{center}
+
+$$1<x<6$$
+
+I would like to thank Mrs. Sue Millikin, who taught me absolute value inequalities in this manner.
+%%%%%
+%%%%%
+\end{document}

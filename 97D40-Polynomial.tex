@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Polynomial}
+\pmcreated{2013-03-22 17:53:38}
+\pmmodified{2013-03-22 17:53:38}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{polynomial}
+\pmrecord{9}{40380}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97D40}
+\pmclassification{msc}{26C99}
+\pmclassification{msc}{12-00}
+\pmrelated{OppositePolynomial}
+\pmrelated{PolynomialRing}
+\pmdefines{monomial}
+\pmdefines{term}
+\pmdefines{like terms}
+\pmdefines{combine like terms}
+\pmdefines{combined like terms}
+\pmdefines{combining like terms}
+\pmdefines{expanded}
+\pmdefines{expand}
+\pmdefines{constant term}
+\pmdefines{degree}
+\pmdefines{coefficient}
+\pmdefines{descending order}
+\pmdefines{ascending order}
+\pmdefines{leading coefficient}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pstricks}
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\begin{document}
+\PMlinkescapephrase{occur in}
+\PMlinkescapeword{right}
+
+A \emph{polynomial} can be defined iteratively as follows:
+\begin{itemize}
+\item Constants are polynomials.
+\item Variables (such as $x$) are polynomials.
+\item Adding, subtracting, or multiplying two polynomials always yields a polynomial.
+\end{itemize}
+
+The above process always yields expressions in which variables only have exponents that are positive (or nonnegative) and in which variables never occur in denominators or within functions such as under radicals or inside absolute values.
+
+It should be mentioned that, if the above process is used to create a polynomial, then the process \emph{must} terminate since polynomials are not infinitely long.
+
+For example, $x^2y^3+\frac{1}{2}x^2y^2+y^3x^2\sqrt{2}$ is a polynomial.  Note that fractions, radicals, and the like \emph{can} occur in polynomials.  It is only stipulated that no \emph{variables} appear in denominators, under radicals, etc.
+
+A \emph{monomial} is a polynomial in which variables are being multiplied only.  Within a polynomial, a monomial that is as large as possible is called a \emph{term} of the polynomial.  In the example above, $x^2y^3$, $\frac{1}{2}x^2y^2$, and $y^3x^2\sqrt{2}$ are the terms of the polynomial.  As alluded to earlier, every polynomial has a finite number of terms.
+
+Terms of a polynomial are \emph{like} if their variable expressions match.  In the example above, $x^2y^3$ and $y^3x^2\sqrt{2}$ are like terms.
+
+When students are first learning about polynomials, it is advisable to teach them to alphabetize the variables in each term.  That way, students can more easily detect like terms.
+
+Like terms can be \emph{combined} by using the distributive property.  For example,
+\begin{align*}
+x^2y^3+\frac{1}{2}x^2y^2+y^3x^2\sqrt{2} & =x^2y^3+x^2y^3\sqrt{2}+\frac{1}{2}x^2y^2 \\
+& =(1+\sqrt{2})x^2y^3+\frac{1}{2}x^2y^2.
+\end{align*}
+
+A polynomial is \emph{expanded} if no variable occurs within parentheses.  For example, $(x-3)(x+2)$ is a polynomial since both $x-3$ and $x+2$ are polynomials.  Expanding and combining like terms yields
+\begin{align*}
+(x-3)(x+2) & =x^2+2x-3x-6 \\
+& =x^2-x-6.
+\end{align*}
+
+In an expanded polynomial in which all like terms have been combined, the \emph{constant term} is the term in which no variable appears (or all variables occur to the zero power).  For example, $-6$ is the constant term of $x^2-x-6$.  If no constant term appears, then the constant term is $0$.
+
+The \emph{degree} of a (nonzero) monomial is the sum of the exponents of its variables.  Since $x^0=1$, the degree of a (nonzero) constant is $0$.  Most \PMlinkescapetext{sources} do not define the degree of the polynomial $0$; some define the degree of the polynomial $0$ to be $-\infty$.
+
+The \emph{degree} of a polynomial is the maximum of the degrees of its terms after the polynomial has been expanded.  For example, the polynomial $(1+\sqrt{2})x^2y^3+\frac{1}{2}x^2y^2$ has degree $5$.
+
+The \emph{coefficient} of a monomial is the numerical (non-variable) portion of the monomial.  For example, the coefficient of $-2x^2y^3$ is $-2$.
+
+Occasionally, it may be stipulated that all of the coefficients of a polynomial be in a certain set.  For example, most textbooks on elementary mathematics deal with polynomials with integer coefficients almost exclusively.  Other sets that are commonly used as the coefficients of polynomials include the rational numbers, the real numbers, and the complex numbers.
+
+For the \PMlinkescapetext{remainder} of this entry, only polynomials in one variable will be discussed.
+
+An expanded polynomial is in \emph{descending order} if the degrees of the terms of the polynomial are strictly decreasing as the polynomial is read from left to right.  Note that, for a polynomial to be written in descending order, all like terms have to be combined.  For example, $x^2-x-6$ is in descending order.  Since $x^0=1$, the constant term always occurs last in a polynomial written in descending order.  Note that an expanded polynomial is in \emph{ascending order} if the degrees of the terms of the polynomial are strictly increasing as the polynomial is read from left to right.
+
+In an expanded polynomial in which all like terms have been combined, the \emph{leading coefficient} is the coefficient of the term that determines the degree of the polynomial.  Therefore, if a polynomial is written in descending order, then the leading coefficient will be the leftmost coefficient.
+
+More to come\dots
+%%%%%
+%%%%%
+\end{document}

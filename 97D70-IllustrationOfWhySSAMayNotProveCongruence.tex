@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IllustrationOfWhySSAMayNotProveCongruence}
+\pmcreated{2013-03-22 17:04:11}
+\pmmodified{2013-03-22 17:04:11}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{illustration of why SSA may not prove congruence}
+\pmrecord{6}{39362}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97D70}
+\pmclassification{msc}{51M99}
+\pmclassification{msc}{51-01}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{amsthm}
+%%\usepackage{xypic}
+\usepackage{pstricks}
+
+\begin{document}
+SSA cannot be used to prove that two triangles are congruent when the angles that are known to be congruent are acute.  Below is an illustration of how this can happen.
+
+In the picture below, $\triangle ABC$ and $\triangle ABD$ share the angle $\angle A$ and the side $\overline{AB}$, and the line segments $\overline{BC}$ and $\overline{BD}$ are congruent; however, $\triangle ABC$ and $\triangle ABD$ are clearly not congruent.
+
+\begin{center}
+\begin{pspicture}(-8,-1)(6,5)
+\pspolygon(-7,0)(2.5,4)(5,0)
+\psline(0,0)(2.5,4)
+\psline(1,2.15625)(1.5,1.84375)
+\psline(3.5,1.84375)(4,2.15625)
+\rput[u](-7,-0.3){$A$}
+\rput[b](2.5,4.1){$B$}
+\rput[u](5,-0.3){$C$}
+\rput[u](0,-0.3){$D$}
+\end{pspicture}
+\end{center}
+%%%%%
+%%%%%
+\end{document}

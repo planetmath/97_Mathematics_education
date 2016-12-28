@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FactoringASumOrDifferenceOfTwoCubes}
+\pmcreated{2013-03-22 15:59:17}
+\pmmodified{2013-03-22 15:59:17}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{factoring a sum or difference of two cubes}
+\pmrecord{13}{38008}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97D40}
+\pmrelated{IrreducibilityOfBinomialsWithUnityCoefficients}
+\pmrelated{DifferenceOfSquares}
+\pmdefines{SDP}
+\pmdefines{S.D.P.}
+\pmdefines{same different plus}
+\pmdefines{San Diego Padres}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\PMlinkescapeword{formula}
+\PMlinkescapeword{formulas}
+\PMlinkescapeword{difference}
+\PMlinkescapeword{term}
+\PMlinkescapeword{terms}
+\PMlinkescapeword{useful}
+
+The formula for factoring a sum of two cubes is:
+\[
+x^3+y^3=(x+y)(x^2-xy+y^2)
+\]
+
+The formula for factoring a difference of two cubes is:
+\[
+x^3-y^3=(x-y)(x^2+xy+y^2)
+\]
+
+When teaching these factorization methods, it may be a good idea to encourage students to know one method for these factorizations rather than have them memorize two separate formulas.
+
+First of all, the factorization is the product of a binomial and a trinomial.  There is a mnemonic device for remembering the signs that works when the binomial is put in front of the trinomial as above.
+
+Ignoring signs for the time being, let us determine how to remember the terms in the factorization.  The two terms of the binomial are just the two terms of the original with the cubes dropped.  The first term of the trinomial is the square of the first term of the binomial, and the last term of the trinomial is the square of the last term of the binomial.  Finally, the middle term of the trinomial is the product of the two terms of the binomial.
+
+Filling these in yields:
+
+\[
+x^3+y^3=(x \,\,\,\,\,\,\, y)(x^2 \,\,\,\,\,\,\, xy \,\,\,\,\,\,\, y^2)
+\]
+
+\[
+x^3-y^3=(x \,\,\,\,\,\,\, y)(x^2 \,\,\,\,\,\,\, xy \,\,\,\,\,\,\, y^2)
+\]
+
+Now for the signs.  A mnemonic for the signs is SDP, which stands for ``same, different, plus''.  This means that the first sign, the one in the binomial, is the \emph{same} as that of the original problem; the second sign, the first one in the trinomial, is \emph{different} from that of the original problem; and the third sign, the last one in the trinomial, is always \emph{plus}.
+
+Filling the signs in as indicated yields the correct formulas:
+
+\[
+x^3+y^3=(x+y)(x^2-xy+y^2)
+\]
+
+\[
+x^3-y^3=(x-y)(x^2+xy+y^2)
+\]
+
+For students who have problems remembering SDP, the team name San Diego Padres comes in handy.  (Who would have thought that a baseball team would be useful for remembering mathematical formulas?)
+%%%%%
+%%%%%
+\end{document}

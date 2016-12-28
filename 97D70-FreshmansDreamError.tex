@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FreshmansDreamError}
+\pmcreated{2013-03-22 16:07:23}
+\pmmodified{2013-03-22 16:07:23}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{freshman's dream error}
+\pmrecord{7}{38192}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97D70}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The name ``freshman's dream theorem'' comes from the fact that people who are unfamiliar with mathematics commonly make the error of distributing exponents over addition and/or subtraction, typically when working in fields of characteristic zero.  An example is the equation $(x+y)^2=x^2+y^2$ for $x,y \in \mathbb{R}$.  The equation is incorrect unless $x=0$ or $y=0$.  By no means does the exponent need to be a natural number or an integer for this error to occur.  An example of this is the equation $\sqrt{x+y}=\sqrt{x}+\sqrt{y}$ for $x,y \in \mathbb{R}$ with $x \ge 0$ and $y \ge 0$.  This equation can be rewritten using the exponent $\frac{1}{2}$, and again, the equation is incorrect unless $x=0$ or $y=0$.
+
+An easy way to explain to someone who is under the impression that exponents distribute over addition and/or subtraction is to provide a \PMlinkescapetext{simple} counterexample.  For instance, when $x=3$ and $y=4$, we have:
+
+\begin{center}
+$\begin{array}{ccccccc}
+(x+y)^2 &=& (3+4)^2 &=& 7^2 &=& 49 \\
+\\
+x^2+y^2 &=& 3^2+4^2 &=& 9+16 &=& 25 \end{array}$
+\end{center}
+
+On the other hand, the freshman's dream theorem yields some instances in which exponents can be distributed over addition and/or subtraction.
+%%%%%
+%%%%%
+\end{document}

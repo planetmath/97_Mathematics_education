@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EvenevenoddRule}
+\pmcreated{2013-03-22 16:01:02}
+\pmmodified{2013-03-22 16:01:02}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{even-even-odd rule}
+\pmrecord{10}{38054}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{97D40}
+\pmrelated{NthRoot}
+\pmrelated{SquareRoot}
+\pmrelated{Radical6}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{prob*}{Problem}
+
+\begin{document}
+\PMlinkescapeword{solution}
+\PMlinkescapeword{necessary}
+
+The \PMlinkescapetext{{\sl even-even-odd rule}} is a mnemonic that is helpful for students for simplifying radical expressions.  The phrase even-even-odd stands for the rule:  If a real variable to an even \PMlinkname{exponent}{Exponent2} is under a \PMlinkescapetext{radical} with an even \PMlinkname{index}{Radical6} and, when the \PMlinkescapetext{radical} is eliminated, the resulting \PMlinkescapetext{exponent} on the variable is odd, then absolute value signs must be placed around the variable.  (All numbers to which "\PMlinkescapetext{exponent}" and "\PMlinkescapetext{index}" refer are natural numbers.)  This rule is justified by the following:
+
+Recall that, for any positive integer $n$, $b$ is the \PMlinkname{$n$th root}{NthRoot} of $a$ if and only if $b^n=a$ and $\operatorname{sign}(b)=\operatorname{sign}(a)$.  Thus, for any positive integer $n$ and $x \in \mathbb{R}$,
+
+$$\sqrt[n]{x^n}=\begin{cases}
+|x| & \text{if } n \text{ is even} \\
+x & \text{if } n \text{ is odd.} \end{cases}$$
+
+The following are some examples of how to use the even-even-odd rule.
+
+\begin{prob*}
+Let $x$, and $y$ be real variables.  Simplify the expression $\sqrt[4]{x^{12}y^8}$.
+\end{prob*}
+
+{\sl Solution:\/}~~The \PMlinkescapetext{exponent} on the $x$ is even (12), the \PMlinkescapetext{index} of the \PMlinkescapetext{radical} is even (4), and the \PMlinkescapetext{exponent} that will occur on the $x$ once the \PMlinkescapetext{radical} is eliminated will be odd (3).  Thus, absolute values are necessary on the $x$.
+
+The \PMlinkescapetext{exponent} on the $y$ is even (8), the \PMlinkescapetext{index} of the \PMlinkescapetext{radical} is even (4), and the \PMlinkescapetext{exponent} that will occur on the $y$ once the \PMlinkescapetext{radical} is eliminated will be even (2).  Thus, according to the rule, absolute values are not necessary on the $y$.  (Note, though, that it would not be incorrect to have them.)  The reason that the absolute values are not necessary is that $y^2$ is nonnegative regardless of the value of $y$.
+
+Thus, we have $\sqrt[4]{x^{12}y^8}=|x|^3y^2$.  (The answer $|x^3|y^2$ is also acceptable.)
+
+Some care is needed in applying the even-even-odd rule, as the next problem shows.
+
+\begin{prob*}
+Let $x$ be a real variable.  Simplify the expression $\sqrt[4]{x^2}$.
+\end{prob*}
+
+Note that, as stated, the even-even-odd rule does not apply here, since, if the \PMlinkescapetext{radical} were eliminated, the resulting \PMlinkescapetext{exponent} on the $x$ will be $\frac{1}{2}$.  On the other hand, it can still be used to provide a correct answer for this particular problem.
+
+{\sl Solution:\/}
+
+$$\sqrt[4]{x^2}=\sqrt{\sqrt{x^2}}=\sqrt{|x|}$$
+
+The good news is that, for square roots, this issue discussed above does not arise:  If the even-even-odd rule does not apply, then absolute values are not necessary.  That is because, if $n \in \mathbb{N}$ is odd, the expression $\sqrt{x^n}$ only makes sense in the real numbers when $x$ is nonnegative.
+
+I would like to thank Mrs. Sue Millikin, who taught me how to simplify \PMlinkescapetext{radical} expressions in this manner.
+%%%%%
+%%%%%
+\end{document}
