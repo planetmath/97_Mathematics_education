@@ -1,0 +1,133 @@
+<!DOCTYPE html><html>
+<head>
+<title>alternative definition of the natural logarithm</title>
+<!--Generated on Sat Feb 10 13:45:07 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">alternative definition of the natural logarithm</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">The natural logarithm function (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/NaturalLogarithm2</span>) <math id="p2.m1" class="ltx_Math" alttext="\log x" display="inline"><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></math> can be defined by an integral, as shown in the entry to which this entry is attached. However, it can also be defined as the inverse function of the exponential function <math id="p2.m2" class="ltx_Math" alttext="\exp x=e^{x}" display="inline"><mrow><mrow><mi>exp</mi><mo>⁡</mo><mi>x</mi></mrow><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></math>.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">In this entry, we show that this definition of <math id="p3.m1" class="ltx_Math" alttext="\log x" display="inline"><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></math> yields a function that satisfies the logarithm laws <math id="p3.m2" class="ltx_Math" alttext="\log xy=\log x+\log y" display="inline"><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mrow><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>log</mi><mo>⁡</mo><mi>y</mi></mrow></mrow></mrow></math> and <math id="p3.m3" class="ltx_Math" alttext="\log x^{r}=r\log x" display="inline"><mrow><mrow><mi>log</mi><mo>⁡</mo><msup><mi>x</mi><mi>r</mi></msup></mrow><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow></math> hold for any positive real numbers <math id="p3.m4" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and <math id="p3.m5" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> and any real number <math id="p3.m6" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math>. We also show that <math id="p3.m7" class="ltx_Math" alttext="\log x" display="inline"><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></math> is differentiable with respect to <math id="p3.m8" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> on the interval <math id="p3.m9" class="ltx_Math" alttext="(1,\infty)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></math> with derivative <math id="p3.m10" class="ltx_Math" alttext="\frac{1}{x}" display="inline"><mfrac><mn>1</mn><mi>x</mi></mfrac></math>. Note that the logarithm laws imply that <math id="p3.m11" class="ltx_Math" alttext="\log 1=0" display="inline"><mrow><mrow><mi>log</mi><mo>⁡</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow></math>. The mean-value theorem implies that these properties characterize the logarithm function.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">The proof of the first logarithm law is straightforward. Let <math id="p4.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and <math id="p4.m2" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> be positive real numbers. Then using the fact that <math id="p4.m3" class="ltx_Math" alttext="e^{x}" display="inline"><msup><mi>e</mi><mi>x</mi></msup></math> and <math id="p4.m4" class="ltx_Math" alttext="\log x" display="inline"><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></math> are inverse functions, we find that</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="e^{\log xy}=xy=e^{\log x}\cdot e^{\log y}=e^{\log x+\log y}." display="block"><mrow><mrow><msup><mi>e</mi><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></msup><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>=</mo><mrow><msup><mi>e</mi><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></msup><mo>⋅</mo><msup><mi>e</mi><mrow><mi>log</mi><mo>⁡</mo><mi>y</mi></mrow></msup></mrow><mo>=</mo><msup><mi>e</mi><mrow><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>log</mi><mo>⁡</mo><mi>y</mi></mrow></mrow></msup></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Since <math id="p4.m5" class="ltx_Math" alttext="e^{x}" display="inline"><msup><mi>e</mi><mi>x</mi></msup></math> is an injective function, the equation <math id="p4.m6" class="ltx_Math" alttext="e^{\log xy}=e^{\log x+\log y}" display="inline"><mrow><msup><mi>e</mi><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></msup><mo>=</mo><msup><mi>e</mi><mrow><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>log</mi><mo>⁡</mo><mi>y</mi></mrow></mrow></msup></mrow></math> implies the first logarithm law.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">For the second logarithm law, observe that</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="e^{\log x^{r}}=x^{r}=(e^{\log x})^{r}=e^{r\log x}." display="block"><mrow><mrow><msup><mi>e</mi><mrow><mi>log</mi><mo>⁡</mo><msup><mi>x</mi><mi>r</mi></msup></mrow></msup><mo>=</mo><msup><mi>x</mi><mi>r</mi></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></msup><mo stretchy="false">)</mo></mrow><mi>r</mi></msup><mo>=</mo><msup><mi>e</mi><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></msup></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Since <math id="p6.m1" class="ltx_Math" alttext="e^{x}" display="inline"><msup><mi>e</mi><mi>x</mi></msup></math> and <math id="p6.m2" class="ltx_Math" alttext="\log x" display="inline"><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></math> are inverse functions and <math id="p6.m3" class="ltx_Math" alttext="e^{x}" display="inline"><msup><mi>e</mi><mi>x</mi></msup></math> is differentiable, so is <math id="p6.m4" class="ltx_Math" alttext="\log x" display="inline"><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></math>. We can use the chain rule to find a formula for the derivative:</p>
+</div>
+<div id="p7" class="ltx_para">
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="1=\frac{dx}{dx}=\frac{d}{dx}[e^{\log x}]=e^{\log x}\frac{d}{dx}[\log x]=x\frac%
+{d}{dx}[\log x]." display="block"><mrow><mrow><mn>1</mn><mo>=</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>e</mi><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></msup><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>e</mi><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></msup><mo>⁢</mo><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Hence, <math id="p8.m1" class="ltx_Math" alttext="\displaystyle\frac{d}{dx}[\log x]=\frac{1}{x}" display="inline"><mrow><mrow><mstyle displaystyle="true"><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle></mrow></math>.</p>
+</div>
+<div id="p9" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">alternative definition of the natural logarithm</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">AlternativeDefinitionOfTheNaturalLogarithm</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 16:11:10</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 16:11:10</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">17</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Topic</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 97D40</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_r">DerivativeOfExponentialFunction</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_r">DerivativeOfInverseFunction</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">Logarithm</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sat Feb 10 13:45:07 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
